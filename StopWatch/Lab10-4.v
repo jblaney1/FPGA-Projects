@@ -36,7 +36,7 @@ module stopWatch(seg,anode,dp,start,stop,countDown,lap,timeSet,reset,clk);
        rsec_01 = sec_01;
        clr = 0; ten = en;  
        end  
-	else if(flash)begin
+	else if(flash && ~timeSet)begin
 	   rmin = fmin;
 	   rsec_10 = fsec_10;
 	   rsec_1 = fsec_1;
